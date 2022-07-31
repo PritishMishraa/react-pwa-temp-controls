@@ -1,38 +1,86 @@
-.App {
-  text-align: center;
+.app-container {
+    height: max-content;
+    width: 300px;
+    padding: 20px;
+    padding-top: 45px;
+    background: #fefae0;
+    border-radius: 20px;
+    box-shadow: 10px 10px 38px 0px rgba(0, 0, 0, 0.75);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.temperature-display-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.temperature-display {
+    display: flex;
+    border-radius: 50%;
+    color: #ffffff;
+    height: 220px;
+    width: 220px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 64px;
+    transition: background 0.5s;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.button-container {
+    display: grid;
+    padding: 25px 40px;
+    grid-template-columns: 90px 90px;
+    grid-template-rows: 90px 90px;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+button {
+    border-radius: 100px;
+    height: 80px;
+    width: 80px;
+    font-size: 32px;
+    color: #ffffff;
+    background: #dda15e;
+    border: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:hover {
+    background: #bc6c25;
+    cursor: pointer;
+}
+
+.disabled {
+    background: gray;
+}
+
+.disabled:hover {
+    background: gray;
+}
+
+.cold {
+    background: #219ebc;
+}
+
+.colder {
+    background: #58b4d1;
+}
+
+.coldest {
+    background: #73bfdc;
+}
+
+.hot {
+    background: #faa307;
+}
+
+.hotter {
+    background: #e85d04;
+}
+
+.hottest {
+    background: #d00000;
 }

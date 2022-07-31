@@ -1,0 +1,4 @@
+- [ ] Make custom Toast Componenet
+- [ ] Make °F Toggle
+- [X] Make PWA 
+- [X] hot, hotter, hotest and cold, colder, coldest Temp Colors
